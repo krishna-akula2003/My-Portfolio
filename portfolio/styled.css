@@ -39,6 +39,7 @@ header a:hover {
     font-size: 25px;
     margin: 10px;
     text-align: center;
+    flex-basis: 50%;
 }
 
 .image1 img {
@@ -49,6 +50,7 @@ header a:hover {
     border: 5px solid #dfe6e9;
     margin: 20px auto;
     display: block;
+    flex-basis: 50%;
 }
 
 .skills, .projects, .contacts {
@@ -112,6 +114,7 @@ a:hover {
     font-size: 25px;
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
     .main {
         flex-direction: column;
@@ -126,6 +129,7 @@ a:hover {
     .content1, .image1 {
         text-align: center;
         margin: 10px 0;
+        flex-basis: 100%;
     }
 
     .skill1 {
@@ -138,5 +142,31 @@ a:hover {
 
     .contacts p {
         font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    header a {
+        font-size: 18px;
+    }
+
+    .content1 {
+        font-size: 20px;
+    }
+
+    .image1 img {
+        max-width: 200px;
+    }
+
+    .skill2, .skill3 {
+        font-size: 18px;
+    }
+
+    .proj1 {
+        font-size: 16px;
+    }
+
+    .contacts p {
+        font-size: 16px;
     }
 }
